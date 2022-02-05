@@ -1,0 +1,17 @@
+﻿@page
+@model DIFactoryPattern.Pages.ReaderModel
+@{
+}
+<div class="container">
+    <form method="post">
+        <div class="row">
+            <input class="form-control col-8" asp-for="Type" />
+            <button type="submit" class="btn btn-primary col-4">Process</button>
+        </div>
+
+    </form>
+    <div class="row alert alert-success">
+        <p >@Model.Data</p>
+    </div>
+</div>
+
