@@ -16,7 +16,7 @@ namespace DIFactoryPattern.Test
         public DocumentFormatWithDITest()
         {
             SetUp();
-            var factories = new Dictionary<string, Func<IDcoumentProcessor>>()
+            var factories = new Dictionary<string, Func<IDocumentProcessor>>()
             {
               ["pdf"]=()=>new PdfProcessor(pdfReader.Object),
               ["odt"]=()=>new OdtProcessor(odtReader.Object),

@@ -30,7 +30,7 @@ namespace DIFactoryPattern
             services.AddTransient<IPdfReader, PdfReader>().AddTransient<IOdtReader, OdtReader>().AddTransient<IWordReader, WordReader>();
             services.AddTransient<IDocumentProcessorFactory>(ctx =>
             {
-                var factories = new Dictionary<string, Func<IDcoumentProcessor>>()
+                var factories = new Dictionary<string, Func<IDocumentProcessor>>()
                 {
                     ["pdf"] = () => new PdfProcessor(ctx.GetService<IPdfReader>()),
                     ["odt"] = () => new OdtProcessor(ctx.GetService<IOdtReader>()),

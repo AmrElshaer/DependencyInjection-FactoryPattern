@@ -7,6 +7,6 @@ namespace DIFactoryPattern
 {
     public interface IDocumentProcessorFactory
     {
-        IDcoumentProcessor Create(string type);
+        IDocumentProcessor Create(string type);
     }
 }

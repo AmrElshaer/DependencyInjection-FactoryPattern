@@ -19,7 +19,7 @@ namespace DIFactoryPattern.Models
             this.odtReader = odtReader;
         }
 
-        public IDcoumentProcessor Create(string type)
+        public IDocumentProcessor Create(string type)
         {
             return type switch { 
              "pdf"=>new PdfProcessor(pdfReader),

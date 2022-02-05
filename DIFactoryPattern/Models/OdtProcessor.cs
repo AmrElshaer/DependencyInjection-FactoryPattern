@@ -5,7 +5,7 @@ using System.Threading.Tasks;
 
 namespace DIFactoryPattern.Models
 {
-    public class OdtProcessor: IDcoumentProcessor
+    public class OdtProcessor: IDocumentProcessor
     {
         private readonly IOdtReader odtReader;
 

@@ -5,7 +5,7 @@ using System.Threading.Tasks;
 
 namespace DIFactoryPattern
 {
-    public interface IDcoumentProcessor
+    public interface IDocumentProcessor
     {
         string Process();
     }

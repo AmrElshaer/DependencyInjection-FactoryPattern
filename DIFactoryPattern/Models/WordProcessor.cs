@@ -5,7 +5,7 @@ using System.Threading.Tasks;
 
 namespace DIFactoryPattern.Models
 {
-    public class WordProcessor:IDcoumentProcessor
+    public class WordProcessor:IDocumentProcessor
     {
         private readonly IWordReader wordReader;
 

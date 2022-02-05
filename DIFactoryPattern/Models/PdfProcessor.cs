@@ -5,7 +5,7 @@ using System.Threading.Tasks;
 
 namespace DIFactoryPattern.Models
 {
-    public class PdfProcessor : IDcoumentProcessor
+    public class PdfProcessor : IDocumentProcessor
     {
         private readonly IPdfReader pdfReader;
 
